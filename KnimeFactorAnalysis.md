@@ -1,5 +1,6 @@
 Performs Factor Analysis within Knime using the Psych Library and Factanal
 
+```R
 knime.out <- knime.in
 x<-cbind(knime.in)
 ##cor(x)
@@ -10,3 +11,4 @@ factors<-factanal(x, factor=5, rotation="varimax", scores="regression")
 ##knime.out<-as.data.frame(unclass(factors$loadings))
 
 knime.out<-factors$scores
+```
