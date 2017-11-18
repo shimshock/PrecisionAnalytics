@@ -38,7 +38,7 @@ knime.out<-as.data.frame(mca1$var$contrib)
 ```
 
 **Code for Scoring**
-```
+```R
 knime.out <- knime.in
 x<-cbind(knime.in)
 library(FactoMineR)
